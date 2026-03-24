@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Transnatur INC</title>
+  <meta name="description" content="Drive with Transnatur INC. CDL-A drivers wanted. Competitive pay, modern fleet, home time. Apply now!">
+  <meta name="keywords" content="CDL-A driver jobs, truck driver hiring, Transnatur INC, flatbed driver, Illinois trucking">
+  <meta property="og:title" content="Drive With Transnatur INC — Apply Now">
+  <meta property="og:description" content="Join our team. Competitive pay, modern Peterbilt fleet, great home time.">
+
+  <!-- Google Analytics placeholder -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+    // Track conversion
+    gtag('event', 'conversion', { 'event_category': 'lead', 'event_label': 'driver_application' });
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy:      #0B1F3A;
+      --red:       #C62828;
+      --gray:      #4A444A;
+      --white:     #FFFFFF;
+      --light:     #F5F5F5;
+      --red-hover: #A31515;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      color: var(--gray);
+      background: var(--navy);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── HEADER ── */
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 28px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    header img { height: 50px; display: block; }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 24px 80px;
+      text-align: center;
+      max-width: 640px;
+    }
+
+    .checkmark-circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: rgba(198,40,40,0.15);
+      border: 3px solid var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 36px;
+      animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+    .checkmark-circle svg {
+      width: 44px;
+      height: 44px;
+      stroke: var(--red);
+      stroke-width: 3;
+      fill: none;
+      stroke-dasharray: 60;
+      stroke-dashoffset: 60;
+      animation: drawCheck 0.5s 0.35s ease forwards;
+    }
+    @keyframes popIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+    }
+    @keyframes drawCheck {
+      to { stroke-dashoffset: 0; }
+    }
+
+    .eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--red);
+      display: block;
+      margin-bottom: 12px;
+      opacity: 0;
+      animation: fadeUp 0.5s 0.6s ease forwards;
+    }
+    h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      line-height: 0.95;
+      margin-bottom: 24px;
+      opacity: 0;
+      animation: fadeUp 0.5s 0.75s ease forwards;
+    }
+    .sub-text {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      margin-bottom: 48px;
+      opacity: 0;
+      animation: fadeUp 0.5s 0.9s ease forwards;
+    }
+    .sub-text strong { color: var(--white); }
+
+    .divider {
+      width: 56px;
+      height: 3px;
+      background: var(--red);
+      border-radius: 2px;
+      margin: 0 auto 40px;
+      opacity: 0;
+      animation: fadeUp 0.5s 0.85s ease forwards;
+    }
+
+    .what-next {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 32px 36px;
+      text-align: left;
+      margin-bottom: 44px;
+      width: 100%;
+      opacity: 0;
+      animation: fadeUp 0.5s 1s ease forwards;
+    }
+    .what-next h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 20px;
+    }
+    .next-steps {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .next-steps li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.5;
+    }
+    .step-num {
+      width: 26px;
+      height: 26px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-top: 1px;
+    }
+
+    .btn-home {
+      display: inline-block;
+      background: var(--white);
+      color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 16px 44px;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.15s;
+      opacity: 0;
+      animation: fadeUp 0.5s 1.1s ease forwards;
+    }
+    .btn-home:hover {
+      background: var(--light);
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      width: 100%;
+      background: rgba(0,0,0,0.25);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      line-height: 1.7;
+    }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.7); }
+
+    @media (max-width: 480px) {
+      .what-next { padding: 24px 20px; }
+      h1 { font-size: 2.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html">
+      <img src="assets/logo-white.png" alt="Transnatur INC">
+    </a>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="checkmark-circle">
+      <svg viewBox="0 0 52 52">
+        <polyline points="14,27 22,35 38,19"/>
+      </svg>
+    </div>
+
+    <span class="eyebrow">Application Received</span>
+    <h1>Thank<br>You!</h1>
+    <div class="divider"></div>
+    <p class="sub-text">
+      Your application has been submitted successfully.<br>
+      <strong>We will contact you within 24 hours.</strong>
+    </p>
+
+    <div class="what-next">
+      <h2>What Happens Next</h2>
+      <ul class="next-steps">
+        <li>
+          <span class="step-num">1</span>
+          Our team reviews your application and verifies your CDL credentials.
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          A Transnatur recruiter calls you within 24 hours to discuss the position.
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          If it's a fit, we'll schedule an orientation and get you on the road.
+        </li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="btn-home">&larr; Back to Home</a>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    16305 S Wheatgrass St, Lockport IL 60441 &nbsp;&middot;&nbsp;
+    <a href="tel:3129094861">(312) 909-4861</a> &nbsp;&middot;&nbsp;
+    MC# 1592651 &nbsp;&middot;&nbsp; USDOT# 4149516<br>
+    &copy; 2025 Transnatur INC. All rights reserved.
+  </footer>
+
+</body>
+</html>

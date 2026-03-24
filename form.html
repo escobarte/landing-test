@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply Now — Transnatur INC Driver Recruitment</title>
+  <meta name="description" content="Drive with Transnatur INC. CDL-A drivers wanted. Competitive pay, modern fleet, home time. Apply now!">
+  <meta name="keywords" content="CDL-A driver jobs, truck driver hiring, Transnatur INC, flatbed driver, Illinois trucking">
+  <meta property="og:title" content="Drive With Transnatur INC — Apply Now">
+  <meta property="og:description" content="Join our team. Competitive pay, modern Peterbilt fleet, great home time.">
+
+  <!-- Google Analytics placeholder -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy:      #0B1F3A;
+      --red:       #C62828;
+      --gray:      #4A444A;
+      --white:     #FFFFFF;
+      --light:     #F5F5F5;
+      --red-hover: #A31515;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      color: var(--gray);
+      background: var(--light);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--navy);
+      padding: 18px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    }
+    header a { display: block; }
+    header img { height: 46px; display: block; }
+    .header-back {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .header-back:hover { color: var(--white); }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 56px 24px 80px;
+    }
+    .form-wrapper {
+      width: 100%;
+      max-width: 620px;
+    }
+
+    /* CTA text above form */
+    .form-cta {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .form-cta .eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--red);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .form-cta h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--navy);
+      line-height: 1.0;
+      letter-spacing: 0.02em;
+      margin-bottom: 12px;
+    }
+    .form-cta p {
+      font-size: 1rem;
+      color: var(--gray);
+      line-height: 1.65;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Benefits strip */
+    .form-perks {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .perk-tag {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 4px;
+    }
+
+    /* Form card */
+    .form-card {
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 8px 40px rgba(11,31,58,0.12);
+      padding: 44px 44px 48px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+    .form-group:last-child { margin-bottom: 0; }
+
+    label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+    label .req { color: var(--red); }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 13px 16px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 1rem;
+      color: var(--navy);
+      background: var(--white);
+      border: 2px solid #ddd;
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    input:focus, select:focus {
+      border-color: var(--navy);
+      box-shadow: 0 0 0 3px rgba(11,31,58,0.08);
+    }
+    input::placeholder { color: #aaa; }
+
+    /* Custom select arrow */
+    .select-wrap {
+      position: relative;
+    }
+    .select-wrap::after {
+      content: '▾';
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gray);
+      pointer-events: none;
+      font-size: 1rem;
+    }
+    .select-wrap select { padding-right: 36px; cursor: pointer; }
+
+    .form-divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 28px 0;
+    }
+
+    .btn-submit {
+      display: block;
+      width: 100%;
+      background: var(--red);
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      padding: 20px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    .btn-submit:hover {
+      background: var(--red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(198,40,40,0.4);
+      animation: none;
+    }
+    .btn-submit:active { transform: translateY(0); }
+    .btn-submit:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+      animation: none;
+      transform: none;
+      box-shadow: none;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(198,40,40,0.55); }
+      50%       { box-shadow: 0 0 0 12px rgba(198,40,40,0); }
+    }
+
+    .form-disclaimer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-top: 14px;
+      line-height: 1.5;
+    }
+
+    /* Error state */
+    input.error, select.error {
+      border-color: var(--red);
+    }
+    .field-error {
+      font-size: 0.78rem;
+      color: var(--red);
+      margin-top: 2px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+    footer a { color: rgba(255,255,255,0.55); text-decoration: none; }
+    footer a:hover { color: var(--white); }
+    footer .footer-logo { height: 36px; display: block; margin: 0 auto 12px; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .form-card { padding: 28px 20px 32px; }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
+      header { padding: 14px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html">
+      <img src="assets/logo-white.png" alt="Transnatur INC">
+    </a>
+    <a href="index.html" class="header-back">&larr; Back to Home</a>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="form-wrapper">
+
+      <!-- CTA above form -->
+      <div class="form-cta">
+        <span class="eyebrow">Now Hiring CDL-A</span>
+        <h1>Start Your<br>Application</h1>
+        <p>Fill out the form below and our team will reach out within <strong>24 hours</strong>. Takes less than 2 minutes.</p>
+      </div>
+
+      <!-- Perks strip -->
+      <div class="form-perks">
+        <span class="perk-tag">💰 Up to $0.65 CPM</span>
+        <span class="perk-tag">🏠 Home Weekly</span>
+        <span class="perk-tag">🚛 2024 Peterbilt</span>
+        <span class="perk-tag">💵 Direct Deposit</span>
+      </div>
+
+      <!-- Form card -->
+      <div class="form-card">
+        <form id="leadForm" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="req">*</span></label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required autocomplete="given-name">
+              <span class="field-error" id="firstNameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="req">*</span></label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required autocomplete="family-name">
+              <span class="field-error" id="lastNameErr"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
+              <span class="field-error" id="phoneErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="john@email.com" required autocomplete="email">
+              <span class="field-error" id="emailErr"></span>
+            </div>
+          </div>
+
+          <hr class="form-divider">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cdlClass">CDL Class <span class="req">*</span></label>
+              <div class="select-wrap">
+                <select id="cdlClass" name="cdlClass" required>
+                  <option value="" disabled selected>Select CDL Class</option>
+                  <option value="CDL-A">CDL-A</option>
+                  <option value="CDL-B">CDL-B</option>
+                  <option value="No CDL">No CDL</option>
+                </select>
+              </div>
+              <span class="field-error" id="cdlClassErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="experience">Years of Experience <span class="req">*</span></label>
+              <div class="select-wrap">
+                <select id="experience" name="experience" required>
+                  <option value="" disabled selected>Select Experience</option>
+                  <option value="Less than 1">Less than 1 year</option>
+                  <option value="1-2">1–2 years</option>
+                  <option value="3-5">3–5 years</option>
+                  <option value="5+">5+ years</option>
+                </select>
+              </div>
+              <span class="field-error" id="experienceErr"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="state">State <span class="req">*</span></label>
+            <div class="select-wrap">
+              <select id="state" name="state" required>
+                <option value="" disabled selected>Select Your State</option>
+                <option>Alabama</option><option>Alaska</option><option>Arizona</option>
+                <option>Arkansas</option><option>California</option><option>Colorado</option>
+                <option>Connecticut</option><option>Delaware</option><option>Florida</option>
+                <option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                <option>Illinois</option><option>Indiana</option><option>Iowa</option>
+                <option>Kansas</option><option>Kentucky</option><option>Louisiana</option>
+                <option>Maine</option><option>Maryland</option><option>Massachusetts</option>
+                <option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                <option>Missouri</option><option>Montana</option><option>Nebraska</option>
+                <option>Nevada</option><option>New Hampshire</option><option>New Jersey</option>
+                <option>New Mexico</option><option>New York</option><option>North Carolina</option>
+                <option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+                <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option>
+                <option>South Carolina</option><option>South Dakota</option><option>Tennessee</option>
+                <option>Texas</option><option>Utah</option><option>Vermont</option>
+                <option>Virginia</option><option>Washington</option><option>West Virginia</option>
+                <option>Wisconsin</option><option>Wyoming</option>
+              </select>
+            </div>
+            <span class="field-error" id="stateErr"></span>
+          </div>
+
+          <hr class="form-divider">
+
+          <button type="submit" class="btn-submit" id="submitBtn">Apply Now</button>
+          <p class="form-disclaimer">We will never sell your information. By submitting, you agree to be contacted by Transnatur INC.</p>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="assets/logo-white.png" alt="Transnatur INC" class="footer-logo">
+    16305 S Wheatgrass St, Lockport IL 60441 &nbsp;|&nbsp;
+    <a href="tel:3129094861">(312) 909-4861</a> &nbsp;|&nbsp;
+    <a href="mailto:Transnaturinc@gmail.com">Transnaturinc@gmail.com</a><br>
+    MC# 1592651 &nbsp;&middot;&nbsp; USDOT# 4149516 &nbsp;&middot;&nbsp; &copy; 2025 Transnatur INC
+  </footer>
+
+  <script>
+    // ── Google Sheets URL — replace with your deployed Apps Script URL ──
+    const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbxxVVlQIzv8wd6v5_-Ad5SGwQ0kChKRTkzUIdp15PD8Tm3iRyvVmnIAtFN9H84Fwh-q/exec";
+
+    async function submitToGoogleSheets(formData) {
+      try {
+        await fetch(GOOGLE_SHEET_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData)
+        });
+        window.location.href = "thankyou.html";
+      } catch (error) {
+        console.error("Submit error:", error);
+        alert("Error submitting form. Please call us: (312) 909-4861");
+      }
+    }
+
+    // ── Validation ──
+    function validateField(id, errId, message) {
+      const el = document.getElementById(id);
+      const err = document.getElementById(errId);
+      const val = el.value.trim();
+      if (!val) {
+        el.classList.add('error');
+        err.textContent = message;
+        return false;
+      }
+      el.classList.remove('error');
+      err.textContent = '';
+      return true;
+    }
+
+    function validateEmail(val) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+    }
+
+    function validatePhone(val) {
+      return /^[\d\s\-\(\)\+]{7,}$/.test(val);
+    }
+
+    // Live clear errors on input
+    ['firstName','lastName','phone','email','cdlClass','experience','state'].forEach(id => {
+      const el = document.getElementById(id);
+      el.addEventListener('input', () => {
+        el.classList.remove('error');
+        const errEl = document.getElementById(id + 'Err');
+        if (errEl) errEl.textContent = '';
+      });
+      if (el.tagName === 'SELECT') {
+        el.addEventListener('change', () => {
+          el.classList.remove('error');
+          const errEl = document.getElementById(id + 'Err');
+          if (errEl) errEl.textContent = '';
+        });
+      }
+    });
+
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      let valid = true;
+      valid = validateField('firstName', 'firstNameErr', 'First name is required') && valid;
+      valid = validateField('lastName',  'lastNameErr',  'Last name is required')  && valid;
+      valid = validateField('phone',     'phoneErr',     'Phone number is required') && valid;
+      valid = validateField('email',     'emailErr',     'Email is required') && valid;
+      valid = validateField('cdlClass',  'cdlClassErr',  'Please select CDL class') && valid;
+      valid = validateField('experience','experienceErr','Please select experience') && valid;
+      valid = validateField('state',     'stateErr',     'Please select your state') && valid;
+
+      // Extra format checks
+      const phoneEl = document.getElementById('phone');
+      if (phoneEl.value && !validatePhone(phoneEl.value)) {
+        phoneEl.classList.add('error');
+        document.getElementById('phoneErr').textContent = 'Enter a valid phone number';
+        valid = false;
+      }
+      const emailEl = document.getElementById('email');
+      if (emailEl.value && !validateEmail(emailEl.value)) {
+        emailEl.classList.add('error');
+        document.getElementById('emailErr').textContent = 'Enter a valid email address';
+        valid = false;
+      }
+
+      if (!valid) return;
+
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      const formData = {
+        firstName:  document.getElementById('firstName').value.trim(),
+        lastName:   document.getElementById('lastName').value.trim(),
+        phone:      document.getElementById('phone').value.trim(),
+        email:      document.getElementById('email').value.trim(),
+        cdlClass:   document.getElementById('cdlClass').value,
+        experience: document.getElementById('experience').value,
+        state:      document.getElementById('state').value
+      };
+
+      await submitToGoogleSheets(formData);
+
+      btn.disabled = false;
+      btn.textContent = 'Apply Now';
+    });
+  </script>
+
+</body>
+</html>
