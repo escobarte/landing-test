@@ -221,39 +221,50 @@
     .benefits .section-title { color: var(--white); }
     .benefits-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 32px;
-      margin-top: 48px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 0;
+      margin-top: 56px;
     }
     .benefit-card {
       opacity: 0;
-      transform: translateY(32px);
+      transform: translateY(24px);
       transition: opacity 0.5s, transform 0.5s;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
+      padding: 28px 12px;
+      border-left: 1px solid rgba(255,255,255,0.08);
+      position: relative;
     }
+    .benefit-card:first-child { border-left: none; }
     .benefit-card.visible { opacity: 1; transform: translateY(0); }
     .benefit-icon {
-      font-size: 2.4rem;
-      filter: drop-shadow(0 2px 6px rgba(198,40,40,0.5));
+      font-size: 2.2rem;
+      filter: drop-shadow(0 2px 8px rgba(198,40,40,0.4));
+      margin-bottom: 4px;
     }
     .benefit-stat {
       font-family: 'Poppins', sans-serif;
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 800;
       color: var(--white);
       line-height: 1;
+      white-space: nowrap;
     }
     .benefit-stat span { color: var(--red); }
     .benefit-label {
-      font-size: 0.9rem;
+      font-size: 0.75rem;
       font-weight: 500;
-      color: rgba(255,255,255,0.72);
-      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      line-height: 1.3;
+      line-height: 1.4;
+      text-align: center;
+    }
+    @media (max-width: 900px) {
+      .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+      .benefit-card:nth-child(4) { border-left: none; }
     }
 
     /* ── FLEET SECTION ── */
@@ -542,13 +553,13 @@
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">🏠</div>
-          <div class="benefit-stat">Home</div>
-          <div class="benefit-label">Weekly Home Time</div>
+          <div class="benefit-stat">Weekly</div>
+          <div class="benefit-label">Home Time</div>
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">✈️</div>
-          <div class="benefit-stat">Relocation</div>
-          <div class="benefit-label">Flight Covered</div>
+          <div class="benefit-stat">Flight</div>
+          <div class="benefit-label">Relocation Covered</div>
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">🏥</div>
@@ -558,12 +569,12 @@
         <div class="benefit-card">
           <div class="benefit-icon">💵</div>
           <div class="benefit-stat">Direct</div>
-          <div class="benefit-label">Weekly Direct Deposit</div>
+          <div class="benefit-label">Weekly Deposit</div>
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">📦</div>
-          <div class="benefit-stat">Flat</div>
-          <div class="benefit-label">Flatbed Trucks & Step Deck Truck</div>
+          <div class="benefit-stat">Flatbed</div>
+          <div class="benefit-label">& Step Deck</div>
         </div>
       </div>
     </div>
