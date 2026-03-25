@@ -127,9 +127,27 @@ Before building, commit to this direction: heavy typography, strong contrast, a 
 
 ### Typography
 - **DO NOT use:** Inter, Roboto, Arial, or system fonts
-- **Display/Headlines:** Use a strong, characterful font — e.g., `Barlow Condensed`, `Oswald`, `Bebas Neue`, or `Anton` (all free on Google Fonts)
-- **Body text:** Pair with a clean, readable font — e.g., `Barlow`, `Source Sans 3`, or `DM Sans`
-- Headlines should feel HEAVY and confident — uppercase, wide tracking on section titles
+- **Headings (h1, h2, h3):** `Poppins` ExtraBold — weight **800**
+- **Descriptors / subtext:** `Bebas Neue` Regular — weight **400**
+
+Google Fonts import (add to every page `<head>`):
+```html
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Bebas+Neue&display=swap" rel="stylesheet">
+```
+
+CSS usage:
+```css
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.subtext, .descriptor, .subtitle, .card-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+```
 
 ### Color & CSS Variables
 Define all colors as CSS variables at the top of every stylesheet:
@@ -278,6 +296,7 @@ CTA Button:  APPLY NOW →
 🏥 Health Insurance Available
 💵 Direct Deposit Weekly
 📦 Flatbed & Dry Van Loads
+✈️ Relocation Support (flight covered)
 ```
 
 ### Why Drive With Us
@@ -311,16 +330,20 @@ Button:    APPLY NOW — IT'S FREE
 
 ```
 transnatur-landing/
-├── index.html          ← Main landing page
+├── video-hero.html     ← Entry point — video background + path selector
+├── index.html          ← Main landing page (drivers)
 ├── form.html           ← Lead form page
 ├── thankyou.html       ← Thank you page
 ├── assets/
 │   ├── logo-white.png  ← Copy from uploads
 │   ├── logo-black.png  ← Copy from uploads
 │   ├── hero-bg.png     ← cover_img.png
-│   └── truck.png       ← 4.png
+│   ├── truck.png       ← 4.png
+│   └── vide_truck.mp4  ← Video for hero background
 └── README.md           ← Setup instructions
 ```
+
+> **Video Hero Page** — see `VIDEO-HERO-PAGE.md` for full instructions.
 
 ---
 
