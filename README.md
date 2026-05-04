@@ -1,9 +1,16 @@
 # Transnatur INC — Landing Page Project
 
-## Switched to Branch "feature-1"
-1. Updating code for CTA FORM to be the same like in Google Sheets from SMM
+## Switched to Branch "code_updates_
+(изменить) 0.7-0.75 cent per mile 
+Round all square shapes and buttons to a 10-point corner radius.
+Выровнить колонку “credentials” с нижней линией в футере
 
+убрать “now hiring cdl-а drivers”, так как они всегда ищуи и сдл и операторов. Пусть просто останется join the transnatur team. 
+Так же, поиенять дескриптер на что-то более обобщённое- (Strong Pay · Modern Trucks · Flight Covered)
 
+заменить текст на—> New Equipment
+
+заменить- now hiring cdl-s на Join the Crew 
 ## Quick Start
 
 1. Open Claude Code
