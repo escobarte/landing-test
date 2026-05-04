@@ -423,14 +423,15 @@
 
   <script>
     // ── Google Sheets URL — replace with your deployed Apps Script URL ──
-    const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbxxVVlQIzv8wd6v5_-Ad5SGwQ0kChKRTkzUIdp15PD8Tm3iRyvVmnIAtFN9H84Fwh-q/exec";
+    const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwY8Ro9QVTDokT2fQpWzELhQIXzIzeQ6pcNykZ4CqeWWQwuZM1FvbqX5NImzw9VE6HfLA/exec";
+    
 
     async function submitToGoogleSheets(formData) {
       try {
         await fetch(GOOGLE_SHEET_URL, {
           method: "POST",
           mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
           body: JSON.stringify(formData)
         });
         window.location.href = "thankyou.html";
