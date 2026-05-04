@@ -1,5 +1,9 @@
 # Transnatur INC — Landing Page Project
 
+## Switched to Branch "feature-1"
+1. Updating code for CTA FORM to be the same like in Google Sheets from SMM
+
+
 ## Quick Start
 
 1. Open Claude Code
