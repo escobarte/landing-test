@@ -505,19 +505,22 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
+      .hero { background-attachment: scroll; }
       .navbar { padding: 12px 20px; }
       .fleet-inner,
       .req-inner { grid-template-columns: 1fr; gap: 36px; }
       .footer-inner { grid-template-columns: 1fr; gap: 32px; }
       .footer-bottom { grid-template-columns: 1fr; gap: 8px; }
       .footer-bottom span:first-child { grid-column: 1; }
-      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 0; }
+      .benefit-card { border-left: none; }
       .why-grid { grid-template-columns: 1fr; }
       .req-cta-box { padding: 32px 24px; }
     }
     @media (max-width: 480px) {
       section { padding: 64px 20px; }
-      .benefits-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+      .benefits-grid { grid-template-columns: 1fr 1fr; gap: 0; }
+      .benefit-card { border-left: none; }
       .benefit-stat { font-size: 2.2rem; }
     }
   </style>
